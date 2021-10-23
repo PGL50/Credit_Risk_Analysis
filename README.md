@@ -53,7 +53,7 @@
 
 <br/>
 
-## Results: Deliverable 2: Use the SMOTEEN algorithm to Predict Credit Risk
+## Results: Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
 
 <br/>
 
