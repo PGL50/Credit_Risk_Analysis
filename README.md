@@ -5,7 +5,7 @@
 
 <br/>
 
-## Results: Deliverable 1
+## Results: Deliverable 1: Use Resampling Models to Predict Credit Risk 
 
 <br/>
 
@@ -41,13 +41,31 @@
    
 -       Accuracy score
 
-    ![SMOTE accuracy](./Resources/smo_accuracy.png) 
+    ![Cluster accuracy](./Resources/cc_accuracy.png) 
 
 -       Confusion matrix
 
-    ![SMOTE matrix](./Resources/smo_matrix.png) 
+    ![Cluster matrix](./Resources/cc_matrix.png) 
 
 -       Imbalanced classification report
 
-    ![SMOTE report](./Resources/smo_report.png)
+    ![Cluster report](./Resources/cc_report.png)
+
+<br/>
+
+## Results: Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
+
+<br/>
+
+-   SMOTEEN 
+    
+-       Accuracy score
+    ![SMOTEEN accuracy](./Resources/teen_accuracy.png) 
+
+-       Confusion matrix
+    ![SMOTEEN matrix](./Resources/teen_matrix.png) 
+
+-       Imbalanced classification report
+    ![SMOTEEN report](./Resources/teen_report.png) 
+
 
