@@ -10,6 +10,9 @@
 <br/>
 
 -   RandomOverSampler 
+<br/>
+
+#### The accuracy not great with the Random Over Sampler model (65%). Only 70 of the 101 high risk category are correctly classified (Recall = 69%). The precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predictin high risk loans.
     
 -       Accuracy score
     ![ROS accuracy](./Resources/ros_accuracy.png) 
@@ -23,7 +26,10 @@
 <br/>
 <br/>
 -   SMOTE 
-    
+  <br/>
+
+#### The accuracy not great with the Synthetic Minority Oversampling Technique (SMOTE) model (66%). Only 64 of the 101 high risk category are correctly classified (Recall = 63%). The precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predicting high risk loans. This model is worse that the Random Over Sampler.
+
        Accuracy score
   
   ![SMO accuracy](./Resources/smo_accuracy.png) 
@@ -38,7 +44,10 @@
 <br/>
 
 -   ClusterCentroids
-        
+    <br/>
+
+#### The accuracy even lower with the Cluster Centroid model (54%). Only 70 of the 101 high risk category are correctly classified (Recall = 69%). Again the precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.01) which indicates a model that is not great for predicting high risk loans. This model about the same as the Random Over Sampler.
+       
    
 -       Accuracy score
 
@@ -59,6 +68,10 @@
 <br/>
 
 -   SMOTEENN 
+
+
+#### The accuracy even lower with the SMOTEENN model (54%). 79 of the 101 high risk category are correctly classified (Recall = 78%). This is an improvement over the previous 3 models. Again the precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predicting high risk loans. The recall is getting a little better but the F1 score is not improving. 
+       
     
 -       Accuracy score
     ![SMOTEEN accuracy](./Resources/teen_accuracy.png) 
@@ -77,6 +90,9 @@
 <br/>
 
 -   Balanced Random Forest Classifier 
+
+#### The accuracy has improved a bit with the Balanced Random Forest model (79%). 71 of the 101 high risk category are correctly classified (Recall = 70%). This is not too bad at finding the true high risk outcomes. Again the precision (3%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low  but getting better (0.06) which indicates a model that is not great for predicting high risk loans. The recall is getting a little better but the F1 score has only improved slightly. 
+       
     
 -       Accuracy score
     ![BRF accuracy](./Resources/rf_accuracy.png) 
@@ -87,11 +103,15 @@
 -       Imbalanced classification report
     ![BRF report](./Resources/rf_report.png) 
 
+-       Importance list report
+    ![BRF report](./Resources/rf_import.png) 
 
 <br/>
 
 -   Easy Ensemble AdaBoost Classifier 
     
+#### The accuracy has improved quite a bit with the Easy Ensemble model (93%). 93 of the 101 high risk category are correctly classified (Recall = 92%). This much better at finding the true high risk outcomes. Again the precision (9%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is low has improved (0.16) which indicates a model that is a littel better than all the other models for predicting high risk loans. The recall is quite good and the F1 score has improved slightly. 
+       
 -       Accuracy score
     ![EE accuracy](./Resources/ee_accuracy.png) 
 
