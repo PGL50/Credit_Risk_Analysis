@@ -25,7 +25,8 @@
 -   SMOTE 
     
        Accuracy score
-![SMO accuracy](./Resources/smo_accuracy.png) 
+  
+  ![SMO accuracy](./Resources/smo_accuracy.png) 
 
 -       Confusion matrix
     ![SMOTE matrix](./Resources/smo_matrix.png) 
@@ -57,7 +58,7 @@
 
 <br/>
 
--   SMOTEEN 
+-   SMOTEENN 
     
 -       Accuracy score
     ![SMOTEEN accuracy](./Resources/teen_accuracy.png) 
@@ -68,4 +69,35 @@
 -       Imbalanced classification report
     ![SMOTEEN report](./Resources/teen_report.png) 
 
+
+<br/>
+
+## Results: Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
+
+<br/>
+
+-   Balanced Random Forest Classifier 
+    
+-       Accuracy score
+    ![BRF accuracy](./Resources/rf_accuracy.png) 
+
+-       Confusion matrix
+    ![BRF matrix](./Resources/rf_matrix.png) 
+
+-       Imbalanced classification report
+    ![BRF report](./Resources/rf_report.png) 
+
+
+<br/>
+
+-   Easy Ensemble AdaBoost Classifier 
+    
+-       Accuracy score
+    ![EE accuracy](./Resources/ee_accuracy.png) 
+
+-       Confusion matrix
+    ![EE matrix](./Resources/ee_matrix.png) 
+
+-       Imbalanced classification report
+    ![EE report](./Resources/ee_report.png) 
 
