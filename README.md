@@ -10,7 +10,6 @@
 <br/>
 
 -   RandomOverSampler 
-<br/>
 
 #### The accuracy not great with the Random Over Sampler model (65%). Only 70 of the 101 high risk category are correctly classified (Recall = 69%). The precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predicting high risk loans.
     
@@ -27,7 +26,6 @@
 <br/>
 
 -   SMOTE 
-  <br/>
 
 #### The accuracy not great with the Synthetic Minority Oversampling Technique (SMOTE) model (66%). Only 64 of the 101 high risk category are correctly classified (Recall = 63%). The precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predicting high risk loans. This model is worse that the Random Over Sampler.
 
@@ -45,7 +43,6 @@
 <br/>
 
 -   ClusterCentroids
-    <br/>
 
 #### The accuracy even lower with the Cluster Centroid model (54%). Only 70 of the 101 high risk category are correctly classified (Recall = 69%). Again the precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.01) which indicates a model that is not great for predicting high risk loans. This model about the same as the Random Over Sampler.
        
