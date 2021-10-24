@@ -1,7 +1,7 @@
 # Overview of Credit Risk Analysis
 
-### The Analysis of credit risk involves unbalanced classifications. Low risk customers outnumber the high risk loans. The imbalanced-learn and scikit-learn libraries will be used to build models and evaluate them with resmapling to predict credit risk.
-### The credit card credit dataset from LendingClub will be analyzed with two oversampling and one undersampline algorithms and the results from machine learning models will be compared. Next two ensemble models will be used and the performance evaluated.
+### The Analysis of credit risk involves unbalanced classifications. Low risk customers outnumber the high risk loans. The imbalanced-learn and scikit-learn libraries will be used to build models and evaluate them with resampling to predict credit risk.
+### The credit card credit dataset from LendingClub will be analyzed with two oversampling and one undersampling algorithms and the results from machine learning models will be compared. Next two ensemble models will be used and the performance evaluated. All the results and the summary will focus on the high risk outcome since that is what is of interest in credit risk analyses.
 
 <br/>
 
@@ -12,7 +12,7 @@
 -   RandomOverSampler 
 <br/>
 
-#### The accuracy not great with the Random Over Sampler model (65%). Only 70 of the 101 high risk category are correctly classified (Recall = 69%). The precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predictin high risk loans.
+#### The accuracy not great with the Random Over Sampler model (65%). Only 70 of the 101 high risk category are correctly classified (Recall = 69%). The precision (1%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is really low as well (0.02) which indicates a model that is not great for predicting high risk loans.
     
 -       Accuracy score
     ![ROS accuracy](./Resources/ros_accuracy.png) 
@@ -110,7 +110,7 @@
 
 -   Easy Ensemble AdaBoost Classifier 
     
-#### The accuracy has improved quite a bit with the Easy Ensemble model (93%). 93 of the 101 high risk category are correctly classified (Recall = 92%). This much better at finding the true high risk outcomes. Again the precision (9%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is low has improved (0.16) which indicates a model that is a littel better than all the other models for predicting high risk loans. The recall is quite good and the F1 score has improved slightly. 
+#### The accuracy has improved quite a bit with the Easy Ensemble model (93%). 93 of the 101 high risk category are correctly classified (Recall = 92%). This much better at finding the true high risk outcomes. Again the precision (9%) is very low due to a very imbalanced data set with such high number of low risk clients. The F1 score is low has improved (0.16) which indicates a model that is a little better than all the other models for predicting high risk loans. The recall is quite good and the F1 score has improved slightly. 
        
 -       Accuracy score
     ![EE accuracy](./Resources/ee_accuracy.png) 
@@ -129,9 +129,15 @@
 
 #### The Credit Risk data set requires addressing the class inbalance of the high risk and low risk loans. There are 101 high risk vs 17,104 low risk loans. It would be fairly easy to predict the low risk loans but it is of much more importance to a Credit company to determine high risk loans. 
 
+<br/>
+
 #### The first two models (RandomOverSampler and SMOTE) used over sampling techniques. The results are models with low F1 scores and only moderate recall. The SMOTE model may also be sensitive to outliers. The third model (ClusterCentroid) utilized undersampling of the low risk category. This model did not do much better than the oversampled models.
+
+<br/>
 
 #### The fourth model used a combinatorial approach of over- and undersampling (SMOTEENN). The accuracy was not improved but the recall did improve of the previous three models. The F1 score was very low though. 
 
+<br/>
 
-#### The final two models used Ensemble Classifiers: Balanced Random Forest Classifier and Easy Ensemble Classifier. Both of these employ bootstrap sampling to achieve the balances samples. The Random Forest classifier showed an improvement in recall but not much improvemen of the F1 score. The Easy Ensemble classifier showed the best results of all six models with very high accuracy and recall. The F1 score is not great with all the models but in this case the trade off of recall is more important than precision. It is more important to detect the high risk loans. I'd recommend the Easy Ensemble as a good start to identify high risk loans. But I'd also recommend redoing the models with scaling all the features. There is a large range of measurements within the features. Income and, loan amount are very large numbers while features like interest rate are very small numbers. This may improve the recall even more with the Easy Ensemble classifier.
+
+#### The final two models used Ensemble Classifiers: Balanced Random Forest Classifier and Easy Ensemble Classifier. Both of these employ bootstrap sampling to achieve the balances samples. The Random Forest classifier showed an improvement in recall but not much improvemen of the F1 score. The Easy Ensemble classifier showed the best results of all six models with very high accuracy and recall. The F1 score is a weighted average of precision and recall and the relative contribution of each is equal. The F1 score is not great with all the models but in this case the trade off of recall is more important than precision. It is more important to detect the high risk loans. I'd recommend the Easy Ensemble as a good start to identify high risk loans. But I'd also recommend redoing the models with scaling all the features. There is a large range of measurements within the features. Income and loan amount are very large numbers while features like interest rate are very small numbers. This may improve the recall even more with the Easy Ensemble classifier.
